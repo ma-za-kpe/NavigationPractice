@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.maku.navigationpractice.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_robotFragment"
+            app:destination="@id/robotFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_humanFragment"
+            app:destination="@id/humanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/robotFragment"
+        android:name="com.maku.navigationpractice.RobotFragment"
+        android:label="fragment_robot"
+        tools:layout="@layout/fragment_robot" >
+        <action
+            android:id="@+id/action_robotFragment_to_gansterPtsFragment"
+            app:destination="@id/gansterPtsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/humanFragment"
+        android:name="com.maku.navigationpractice.HumanFragment"
+        android:label="fragment_human"
+        tools:layout="@layout/fragment_human" >
+        <action
+            android:id="@+id/action_humanFragment_to_otherFragment"
+            app:destination="@id/otherFragment" />
+        <action
+            android:id="@+id/action_humanFragment_to_devFragment"
+            app:destination="@id/devFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gansterPtsFragment"
+        android:name="com.maku.navigationpractice.GansterPtsFragment"
+        android:label="GansterPtsFragment" >
+        <action
+            android:id="@+id/action_gansterPtsFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherFragment"
+        android:name="com.maku.navigationpractice.OtherFragment"
+        android:label="fragment_other"
+        tools:layout="@layout/fragment_other" >
+        <action
+            android:id="@+id/action_otherFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/devFragment"
+        android:name="com.maku.navigationpractice.DevFragment"
+        android:label="fragment_dev"
+        tools:layout="@layout/fragment_dev" >
+        <action
+            android:id="@+id/action_devFragment_to_mobileFragment"
+            app:destination="@id/mobileFragment" />
+        <action
+            android:id="@+id/action_devFragment_to_webFragment"
+            app:destination="@id/webFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mobileFragment"
+        android:name="com.maku.navigationpractice.MobileFragment"
+        android:label="fragment_mobile"
+        tools:layout="@layout/fragment_mobile" >
+        <action
+            android:id="@+id/action_mobileFragment_to_hybridFragment"
+            app:destination="@id/hybridFragment" />
+        <action
+            android:id="@+id/action_mobileFragment_to_nativeFragment"
+            app:destination="@id/nativeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.maku.navigationpractice.ui.home.WebFragment"
+        android:label="fragment_web"
+        tools:layout="@layout/fragment_web" >
+        <action
+            android:id="@+id/action_webFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/hybridFragment"
+        android:name="com.maku.navigationpractice.HybridFragment"
+        android:label="fragment_hybrid"
+        tools:layout="@layout/fragment_hybrid" >
+        <action
+            android:id="@+id/action_hybridFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nativeFragment"
+        android:name="com.maku.navigationpractice.NativeFragment"
+        android:label="fragment_native"
+        tools:layout="@layout/fragment_native" >
+        <action
+            android:id="@+id/action_nativeFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home" />
+    </fragment>
+
+</navigation>

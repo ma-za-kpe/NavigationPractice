@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NavigationPractice</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mazakpe</string>
+    <string name="nav_header_subtitle">makpalyy@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Binary">01101001 00100000 01101100 01101111 01110110 01100101 00100000 01110100 01100101 01110001 01110101 01101001 01101100 01100001</string>
+</resources>
